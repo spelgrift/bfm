@@ -1,0 +1,79 @@
+// BUTTONS
+.btn {
+	border:none;
+	border-radius: 27px;
+	padding: 0 18px;
+	font-family: @brandFont;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: normal;
+	line-height: 2em;
+	color: white;
+	margin-bottom: 15px;
+	margin-top: 5px;
+
+	&:hover {
+		color: white;
+	}
+}
+.btn-primary {
+	background-color: @primary;
+	&:hover, &:active, &:focus {
+		background-color: darken(@primary, 10%)
+	}
+}
+
+.btn-secondary {
+	background-color: @secondary;
+	&:hover, &:active, &:focus {
+		background-color: lighten(@secondary, 10%)
+	}
+}
+
+.socialIcons {
+	text-align: center;
+
+	a {
+		display: inline-block;
+		position: relative;
+		height: 50px;
+		margin:5px 5px;
+		padding: 0 18px;
+		text-decoration: none;
+		text-align: center;
+		color: #fff;
+		font-size: 25px;
+		font-weight: normal;
+		line-height: 2em;
+		border-radius: 27px;
+		background-color: @secondary;
+		font-family: @brandFont;
+
+		&.circleIcon {
+			width: 50px;
+			padding: 0px;
+		}
+
+		&:hover {
+			background-color: lighten(@secondary, 10%);
+			// color: @accent;
+		}
+	}
+
+}
+
+img.img-slant-right {
+	clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+img.img-slant-left {
+	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+}
+.flex-container {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	// height:100%;
+}
+
+

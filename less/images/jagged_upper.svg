@@ -1,0 +1,11 @@
+<svg id="jagged_upper" data-name="jagged_upper" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215.67 20">
+  <defs>
+    <style>
+      .jagged-upper-svg {
+        fill: #ed1c24;
+      }
+    </style>
+  </defs>
+  <title>jagged_upper</title>
+  <polygon class="jagged-upper-svg" points="215.67 18 144.33 0 72 18 0 0 0 20 215.67 20 215.67 18"/>
+</svg>
