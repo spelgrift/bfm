@@ -4,8 +4,22 @@
 
 <header>
 	<div id="header-brand">
+		<div class='brand-logo-center' >
+			<img src='<? echo URL."/public/images/BFM_logo_v1.svg"; ?>'>
+			<a href='<? echo URL; ?>'>
+				Barrel	Full Of Monkeys
+				<span class='subheader'>Entertainment</span>
+			</a>
+		</div>
 
-		<div class='brand-logo' >
+		<nav>
+			<a href='#'>Children's Entertainment</a>
+			<a href='#'>Corporate Events</a>
+			<a href='#'>Circus Classes</a>
+			<a href='#'>Photos &amp; Videos</a>
+		</nav>
+
+		<div class='brand-logo-left' >
 			<img src='<? echo URL."/public/images/BFM_logo_v1.svg"; ?>'>
 			<a href='<? echo URL; ?>'>
 				Barrel<br>
