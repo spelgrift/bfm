@@ -1,18 +1,25 @@
-<div id='mainNavButton' class='menuIcon'>
-	<span></span>
-	<span></span>
-	<span></span>
-	<span></span>
+<div id='fixedNav'>
+	<div id='mainNavButton' class='menuIcon'>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<div class='jagged-lower'>
+		<? echo file_get_contents("public/images/jagged_lower.svg"); ?>
+	</div>
 </div>
 
 <div id='menuDrawer' class='menuDrawer'>
 	<div class='drawer'>
 		<div class='mainMenu'>
 			<h2>MAIN MENU</h1>
-			<a href='#'>Children's Entertainment</a>
-			<a href='#'>Corporate Events</a>
+			<a href='#'>Services</a>
+			<a href='#'>Characters</a>
 			<a href='#'>Circus Classes</a>
 			<a href='#'>Photos &amp; Videos</a>
+			<a href='#'>Contact</a>
 		</div>
 		<div class='subMenu'>
 			<h3>For booking:</h3>

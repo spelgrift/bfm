@@ -1,36 +1,7 @@
-<?php require 'views/inc/navDrawer.php'; ?>
-
-
-
-<header>
-	<div id="header-brand">
-		<div class='brand-logo-center' >
-			<img src='<? echo URL."/public/images/BFM_logo_v1.svg"; ?>'>
-			<a href='<? echo URL; ?>'>
-				Barrel	Full Of Monkeys
-				<span class='subheader'>Entertainment</span>
-			</a>
-		</div>
-
-		<nav>
-			<a href='#'>Children's Entertainment</a>
-			<a href='#'>Corporate Events</a>
-			<a href='#'>Circus Classes</a>
-			<a href='#'>Photos &amp; Videos</a>
-		</nav>
-
-		<div class='brand-logo-left' >
-			<img src='<? echo URL."/public/images/BFM_logo_v1.svg"; ?>'>
-			<a href='<? echo URL; ?>'>
-				Barrel<br>
-				Full Of<br>
-				Monkeys<br>
-				<span class='subheader'>Entertainment</span>
-			</a>
-		</div>
-
-	</div>
-</header>
+<?php 
+require 'views/inc/navDrawer.php'; 
+require 'views/inc/header.php';
+?>
 
 <section class='primary jagged'>
 	<div class='jagged-upper'>
@@ -58,7 +29,12 @@
 
 <section>
 	<div class='container'>
-		<div class='row flex-container'>
+		<div class='row'>
+			<div class='col-xs-8 col-md-offset-1 col-lg-offset-2'>
+				<h1>SERVICES</h1>
+			</div>
+		</div>
+		<div class='row service-row flex-container'>
 			<div class='col-sm-6 col-md-5 col-lg-4'>
 				<h3>Circus Variety Show</h3>
 				<p>2 performers, unicycling, tall unicycle, juggling (ball, club and hats), comedy magic, hooping and more.</p>
@@ -67,13 +43,13 @@
 				<a class='btn btn-primary' href='https://www.youtube.com/watch?v=N7uTZpZ1klE' target="_blank">Watch a sample video</a>
 				<p><small><strong>Space needs:</strong> To do all of our tricks we need 14 ft x 14ft performance area and 14ft height clearance. We prefer a wood floor or concrete. It is very difficult for us to perform our show on grass, gravel or on an incline. If the space is smaller we can adjust our show to fit the space.</small></p>
 			</div>
-			<div class='col-sm-6 col-md-5 col-lg-4'>
+			<div class='col-sm-6 col-md-5 col-lg-4 hidden-xs'>
 				<img class='img-responsive img-slant-right' src='<? echo URL."/public/images/circusShow.jpg"; ?>'>
 			</div>	
 		</div>
 
-		<div class='row flex-container'>
-			<div class='col-sm-6 col-md-5 col-lg-4'>
+		<div class='row service-row flex-container'>
+			<div class='col-sm-6 col-md-5 col-lg-4 hidden-xs'>
 				<img class='img-responsive img-slant-left' src='<? echo URL."/public/images/bubbleShow.jpg"; ?>'>
 			</div>
 			<div class='col-sm-6 col-md-5 col-lg-4'>
@@ -87,14 +63,14 @@
 			</div>				
 		</div>
 
-		<div class='row flex-container'>
+		<div class='row service-row flex-container'>
 			<div class='col-sm-6 col-md-5 col-lg-4'>
 				<h3>Magic and puppet Shows</h3>
 				<p>A fun and interactive show that entertains kids and parents alike. Perfect for any event, from birthday parties to stage shows! Your performer enters as the character of your choice.</p>
 				<p>The audience and guests are invited to participate and interact during the entire 30 minute show. Although Our characters love to use both puppets and magic tricks for everyone, for ages 0-5 more puppets are suggested. For ages 5+ more magic is suggested.</p>
 				<a class='btn btn-primary' href='https://www.youtube.com/watch?v=N7uTZpZ1klE' target="_blank">see pictures</a>
 			</div>
-			<div class='col-sm-6 col-md-5 col-lg-4'>
+			<div class='col-sm-6 col-md-5 col-lg-4 hidden-xs'>
 				<img class='img-responsive img-slant-right' src='<? echo URL."/public/images/magicPuppetShow.jpg"; ?>'>
 			</div>	
 		</div>
