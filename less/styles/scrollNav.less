@@ -1,0 +1,38 @@
+nav#scrollNav {
+	width:100%;
+	position: fixed;
+	text-align: center;
+	z-index: 8;
+	padding-top: 3px;
+	background: @secondary;
+	border-bottom: 8px solid @primary;
+	top:-46px;
+	transition: top .3s ease-in-out;
+	&.open {
+		top: 0px;
+	}
+	a {
+		display: inline-block;
+		color: white;
+		font-family: @navFont;
+		font-size: 10pt;
+		font-weight: 800;
+		text-transform: uppercase;
+		padding: 8px 20px;
+		transition: color .5s ease-in-out;
+
+		&:hover {
+			text-decoration: none;
+			color:saturate(lighten(@primary, 10%), 10%);
+		}
+	}
+}
+
+@media(min-width:992px) {
+	nav#scrollNav {
+		a {
+			padding: 8px 35px;
+		}
+	}
+}
+

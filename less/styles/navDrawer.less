@@ -2,24 +2,36 @@
 	background-color: @secondary;
 	position: fixed;
 	width:100%;
-	height:50px;
+	height:20px;
+	text-align: center;
 	top:0;
-	z-index: 7;
+	z-index: 6;
+
 	#mainNavButton{
-		position: fixed;
-		top:23px;
-		right:23px;
+		top:14px;
+		display: inline-block;
 	}
 
 	.jagged-lower{
 		position: absolute;
 		width:100%;
-		height:25px;
-		bottom:-25px;
+		bottom:-55px;
+		z-index: 7;
 		svg {
 			height:50px;
 			fill: @secondary;
-	;
+		}
+	}
+
+	.jagged-lower-stroke{
+		position: absolute;
+		width:100%;
+		bottom:-75px;
+		z-index: 6;
+		border-top:10px solid @primary;
+		svg {
+			height:60px;
+			fill: @primary;
 		}
 	}
 }
@@ -29,7 +41,7 @@
 	position:fixed;
 	width:100%;
 	height:100%;
-	z-index:8;
+	z-index:5;
 	background-color: rgba(0, 0, 0, 0);
 	transition: background-color .5s ease-in-out;
 	pointer-events: none;
@@ -39,22 +51,23 @@
 		background-color: rgba(0, 0, 0, .5);
 
 		.drawer {
-			right:-10%;
+			top:0px;
 		}
 	}
 
 	.drawer{
 		position:relative;
-		width: 90%;
-		right:-100%;
-		transition: right .5s ease-in-out;
-		top:10px;
+		width: 100%;
+		transition: top .7s ease-in-out;
+		top:-600px;
 		display: block;
 
 		.mainMenu {
+			position:relative;
 			width: 100%;
-			background-color: darken(@primary, 15%);
-			padding:15px;
+			background-color: @primary;
+			padding:25px;
+			padding-top:80px;
 
 			h2{
 				font-family: @navFont;
@@ -73,7 +86,7 @@
 				font-weight: 300;
 				text-transform: uppercase;
 				border-radius: 7px;
-				background-color: darken(@primary, 15%);
+				background-color: @primary;
 				transition: background-color .25s;
 
 				&:hover{
@@ -82,17 +95,28 @@
 					background-color: darken(@primary, 20%);
 				}
 			}
+			.jagged-lower{
+				position: absolute;
+				width:100%;
+				bottom:-30px;
+				left:0;
+				z-index: 7;
+				svg {
+					height:25px;
+					fill: @primary
+				}
+			}
 		}
 		.subMenu {
 			width:100%;
 			background-color: darken(@secondary, 15%);
-			padding:15px;
+			padding:25px;
 
 			h3{
 				color: @accent;
 				font-family: @brandFont;
 				font-size: 28pt;
-				opacity:.7;
+				opacity:.9;
 			}
 
 			p{
@@ -106,7 +130,7 @@
 				a {
 					background-color: @accent;
 					color: darken(@secondary, 15%);
-					opacity:.7;
+					opacity:.9;
 					transition: opacity .25s;
 					&:hover{
 						opacity:1;
@@ -114,76 +138,35 @@
 				}
 			}
 		}
-	}
-}
-
-@media(min-width:768px) {
-	#mainNavButton{
-		top:75px;
-		right:50px;
-		transition: right .25s ease-in-out;
-		&.open{
-			right:25px;
-		}
-	}
-
-	#menuDrawer{
-		.drawer{
-			display: flex;
-			align-items:stretch;
-			top:50px;
-			.mainMenu{
-				width:60%;
-				padding:25px;
-				h2{
-					margin-top: 20px;
-					font-size: 30px;
-				}
-
-				a{
-					font-size: 16pt;
-					padding:5px;
-				}
+		.jagged-lower{
+			position: absolute;
+			width:100%;
+			bottom:-55px;
+			z-index: 7;
+			svg {
+				height:50px;
+				fill: darken(@secondary, 15%);
 			}
-			.subMenu{
-				width:40%;
-				padding:75px 25px;
+		}
+
+		.jagged-lower-stroke{
+			position: absolute;
+			width:100%;
+			bottom:-75px;
+			z-index: 6;
+			border-top:10px solid @primary;
+			svg {
+				height:60px;
+				fill: @primary;
 			}
 		}
 	}
 }
 
-@media(min-width:992px) {
-	#menuDrawer{
-		.drawer{
-			width:75%;	
-		}
-		&.open>.drawer{
-			right:-25%;
-		}
-	}
-}
-
-@media(min-width:1200px) {
-	#menuDrawer{
-		.drawer{
-			width:70%;	
-			.mainMenu{
-				width:55%;
-			}
-			.subMenu{
-				width:45%;
-			}
-		}
-		&.open>.drawer{
-			right:-30%;
-		}
-	}
-}
 
 .menuIcon{
-	width: 60px;
-	height: 45px;
+	width: 40px;
+	height: 30px;
 	position: relative;
 	transform: rotate(0deg);
 	transition: .5s ease-in-out;
@@ -193,7 +176,7 @@
 	span {
 		display: block;
 		position: absolute;
-		height: 7px;
+		height: 5px;
 		width: 100%;
 		background: white;
 		border-radius: 9px;
@@ -213,11 +196,11 @@
 	}
 
 	span:nth-child(2), span:nth-child(3) {
-		top:18px;
+		top:12px;
 	}
 
 	span:nth-child(4) {
-		top:36px;
+		top:24px;
 	}
 
 	&.open, &.open.scrolled {

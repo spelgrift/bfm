@@ -14,14 +14,14 @@ $(function() {
 		}
 	});
 
-	$(window).on('scroll', function() {
-		// console.log(window.pageYOffset);
-		if(window.pageYOffset >= 666) {
-			$menuButton.addClass('scrolled');
-		} else {
-			$menuButton.removeClass('scrolled');
-		}
-	});
+	// $(window).on('scroll', function() {
+	// 	// console.log(window.pageYOffset);
+	// 	if(window.pageYOffset >= 666) {
+	// 		$menuButton.addClass('scrolled');
+	// 	} else {
+	// 		$menuButton.removeClass('scrolled');
+	// 	}
+	// });
 
 	function toggle(){
 		$menuButton.toggleClass('open');

@@ -1,4 +1,5 @@
 <?php 
+require 'views/inc/scrollNav.php';
 require 'views/inc/navDrawer.php'; 
 require 'views/inc/header.php';
 ?>
@@ -12,10 +13,15 @@ require 'views/inc/header.php';
 	</div>
 
 	<div class='container'>
-		<h1 class='text-center'>Leave the entertainment to us</h1>
 		<div class='row'>
-			<div class='col-md-10 col-md-offset-1'>
-				<p class='text-center'>Happiness is guaranteed at Barrel Full Of Monkeys! Make your event something your family and guests will never forget. We serve the East Bay, South Bay, San Francisco, Peninsula, Marin, and Vallejo Areas. Entertainment Packages Available.  No party is too large or too small.</p>
+			<div class='col-xs-10 col-xs-offset-1'>
+				<h1 class='text-center'>Leave the entertainment to us</h1>
+			</div>
+		</div>
+		
+		<div class='row'>
+			<div class='col-xs-10 col-xs-offset-1'>
+				<p class='text-center'>Happiness is guaranteed at Barrel Full Of Monkeys! Make your event something your guests will never forget. We serve the East Bay, South Bay, San Francisco, Peninsula, Marin, and Vallejo Areas. No party is too large or too small.</p>
 				<div class='socialIcons'>
 					<!-- <a href='#' ><i class="fa fa-phone" aria-hidden="true"></i></a> -->
 					<a class='circleIcon' href='#' ><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -31,12 +37,11 @@ require 'views/inc/header.php';
 	<div class='container'>
 		<div class='row'>
 			<div class='col-xs-8 col-md-offset-1 col-lg-offset-2'>
-				<h1>SERVICES</h1>
+				<h1>CIRCUS VARIETY SHOW</h1>
 			</div>
 		</div>
 		<div class='row service-row flex-container'>
 			<div class='col-sm-6 col-md-5 col-lg-4'>
-				<h3>Circus Variety Show</h3>
 				<p>2 performers, unicycling, tall unicycle, juggling (ball, club and hats), comedy magic, hooping and more.</p>
 				<p>The show can be 30-45 minutes. Usually we will stay for 15 minutes or so after the show to do some extra walk about with the children.</p>
 				<p>We can provide our own wireless mics and mini PA.</p>
