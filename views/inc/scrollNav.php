@@ -1,7 +1,9 @@
 <nav id='scrollNav' class='hidden-xs'>
-	<a href='#'>Home</a>
-	<a href='#'>Variety Show</a>
-	<a href='#'>Children's Entertainment</a>
-	<a href='#'>Photos &amp; Videos</a>
-	<a href='#'>Booking</a>
+	<? require 'views/inc/nav.php'; ?>
+	<div class='lower-curve'>
+			<? echo file_get_contents("public/images/sectionCurve_v1.svg"); ?>
+	</div>
+	<div class='lower-curve-stroke'>
+		<? echo file_get_contents("public/images/sectionCurve_v1.svg"); ?>
+	</div>
 </nav>

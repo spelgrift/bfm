@@ -1,0 +1,43 @@
+@keyframes spin {
+	0% { transform:rotate(0deg); }
+	50% { transform:rotate(360deg); }
+	100% { transform:rotate(360deg); }
+}
+
+#loader, #error{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	background-color: darken(@secondary, 15%);
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: center;
+
+	img{
+		width:150px;
+		height:150px;
+	}
+}
+
+#loader{
+	z-index: 20;
+	img{
+		animation: spin 3s ease-in-out 1s infinite alternate;
+	}
+}
+
+#error{	
+	img{
+		display:block;
+	}
+	h2{
+		color: white;
+		font-family: @brandFont;
+		text-align: center;
+	}
+	
+}
+

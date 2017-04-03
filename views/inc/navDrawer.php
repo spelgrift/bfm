@@ -19,10 +19,7 @@
 	<div class='drawer'>
 		<div class='mainMenu'>
 			<h2>MAIN MENU</h1>
-			<a href='#'>Variety Show</a>
-			<a href='#'>Children's Entertainment</a>
-			<a href='#'>Photos &amp; Videos</a>
-			<a href='#'>Booking</a>
+			<? require 'views/inc/nav.php'; ?>
 			<div class='jagged-lower'>
 				<? echo file_get_contents("public/images/jagged_lower2.svg"); ?>
 			</div>
@@ -31,9 +28,9 @@
 			<h3>For booking:</h3>
 			<p>clownsnotbombs@gmail.com</p>
 			<div class='socialIcons'>
-				<a class='circleIcon' href='#'><i class="fa fa-fw fa-phone" aria-hidden="true"></i></a>
-				<a class='circleIcon' href='#' ><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
-				<a class='circleIcon' href='http://google.com' ><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+				<a class='circleIcon' href='tel:1-415-652-7609'><i class="fa fa-fw fa-phone" aria-hidden="true"></i></a>
+				<a class='circleIcon' href='mailto:clownsnotbombs@gmail.com'><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+				<a class='circleIcon' href='https://www.facebook.com/barrelfullofmonkeys' ><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div class='jagged-lower'>

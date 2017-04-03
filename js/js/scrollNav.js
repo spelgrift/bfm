@@ -1,8 +1,13 @@
 var $ = require('jquery');
+require('../libs/jquery.easing.js');
+// require('../libs/scrollspy.js');
+
 $(function() {
    // Page Scroll Navbars
    var $scrollNav = $('#scrollNav');
    var scrollNav_visible;
+   var $pageScrollLinks = $('a.page-scroll');
+   var correction = 15;
 
    // Show scroll nav on page load if already scrolled!
    if(window.pageYOffset > (window.innerHeight - 1)){
@@ -23,6 +28,9 @@ $(function() {
       }
    });
 
+   // Scroll to selected section on click
+   $pageScrollLinks.click(scrollPage);
+
    function showScrollNav(){
    	$scrollNav.addClass('open');
       scrollNav_visible = true;
@@ -32,4 +40,19 @@ $(function() {
    	$scrollNav.removeClass('open');
       scrollNav_visible = false;
    }
+
+   function scrollPage(ev){
+      ev.preventDefault();
+      var offset = $($(this).attr('href')).offset().top,
+      thisCorrection;
+      if($(this).attr('href') == '#walkaround'){
+         thisCorrection = -50;
+      } else {
+         thisCorrection = correction;
+      }
+      $('html, body').stop().animate({
+         scrollTop: offset + thisCorrection
+      }, 1500, 'easeInOutExpo', function(){});
+   }
+
 });
