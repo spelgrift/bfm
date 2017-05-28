@@ -5,7 +5,12 @@ $(function() {
 	var $slideshow = $('header'),
 	$slides = $slideshow.find('.slides');
 
-	loadSlides();
+	$(window).load(function(){
+		$('#loader').fadeOut('slow');
+		loadSlides();
+	});
+
+	
 
 	function loadSlides() {
 		$.ajax({

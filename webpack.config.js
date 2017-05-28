@@ -6,7 +6,7 @@ ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   context: __dirname,
-  devtool: debug ? "inline-sourcemap" : null,
+  // devtool: debug ? "inline-sourcemap" : null,
   entry: {
     'public': ["./js/public.js"]
     // 'admin': ["./js/admin.js"]
