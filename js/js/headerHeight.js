@@ -2,7 +2,7 @@ var $ = require('jquery');
 
 $(function() {
 	var minHeight = 600; // Set to adjust minimum height!
-	var correction = -30; 
+	var correction = -110; // set to -30 for no visible fold
 	var $header = $('header');
 	var $footer = $('footer');
 	var $lastSection = $('section.last-section');

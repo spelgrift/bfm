@@ -6,17 +6,21 @@ define('URL', 'http://kate.sampelgrift.com/ts/bfm_v02/');
 
 define('LIBS', 'libs/');
 
-// Database Login
+// Contact Email
 
-define('dbTYPE', 'mysql');
-define('dbHOST', 'localhost');
-define('dbDATABASE', 'mvc');
-define('dbUSER', 'imageman');
-define('dbPASS', 'imageman');
+define('SENDTO', 'sam.pelgrift@gmail.com');
 
-// Hash key for encoding passwords
-define('PASS_HASH_KEY', 'RogerTheDog');
+// // Database Login
 
-// Hash key for other stuff
-define('GENERAL_HASH_KEY', 'WonderfulWonderful');
+// define('dbTYPE', 'mysql');
+// define('dbHOST', 'localhost');
+// define('dbDATABASE', 'mvc');
+// define('dbUSER', 'imageman');
+// define('dbPASS', 'imageman');
+
+// // Hash key for encoding passwords
+// define('PASS_HASH_KEY', 'RogerTheDog');
+
+// // Hash key for other stuff
+// define('GENERAL_HASH_KEY', 'WonderfulWonderful');
 ?>

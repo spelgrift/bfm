@@ -9,4 +9,5 @@ require('./js/headerHeight.js'); // set header to full window height
 require('./js/headerSlides.js'); // Includes loader
 require('./js/scrollNav.js');
 require('./js/imageViewer.js'); 
+require('./js/contact.js'); 
 require('./js/error.js'); // redirects to main page after timeout

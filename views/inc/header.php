@@ -4,13 +4,7 @@
 	</nav>
 	<div id="header-brand">
 		<div class='brand-logo' >
-			<img src='<? echo URL."/public/images/BFM_logo_v1.svg"; ?>'>
-			<a href='<? echo URL; ?>'>
-				Barrel<br>
-				Full Of<br>
-				Monkeys<br>
-				<span class='subheader'>Entertainment</span>
-			</a>
+			<img src='<? echo URL."/public/images/SCC_logo_v02.svg"; ?>'>
 		</div>
 	</div>
 	<div class='slides'>

@@ -1,3 +1,4 @@
+<div id='walkaround'></div>
 <section class='secondary jagged'>
 	<div class='jagged-upper'>
 		<? echo file_get_contents("public/images/jagged_upper.svg"); ?>

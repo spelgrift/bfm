@@ -18,7 +18,15 @@ class Index extends Controller {
 	}
 
 	function loadSlides(){
+		$headerURL = rtrim(URL, '/');
+		header('Access-Control-Allow-Origin: '.$headerURL, false); 
 		$this->view->render('inc/headerSlides', false);
+	}
+
+	function submitContact(){
+		$headerURL = rtrim(URL, '/');
+		header('Access-Control-Allow-Origin: '.$headerURL, false); 
+		$this->model->submitContact();
 	}
 }
 ?>

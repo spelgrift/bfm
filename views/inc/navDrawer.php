@@ -26,10 +26,9 @@
 		</div>
 		<div class='subMenu'>
 			<h3>For booking:</h3>
-			<p>clownsnotbombs@gmail.com</p>
 			<div class='socialIcons'>
 				<a class='circleIcon' href='tel:1-650-276-6398'><i class="fa fa-fw fa-phone" aria-hidden="true"></i></a>
-				<a class='circleIcon' href='mailto:clownsnotbombs@gmail.com'><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
+				<a class='circleIcon page-scroll' href='#booking'><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
 				<a class='circleIcon' href='https://www.facebook.com/barrelfullofmonkeys' ><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
 			</div>
 		</div>
