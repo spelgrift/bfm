@@ -29,7 +29,7 @@
 			<div class='socialIcons'>
 				<a class='circleIcon' href='tel:1-650-276-6398'><i class="fa fa-fw fa-phone" aria-hidden="true"></i></a>
 				<a class='circleIcon page-scroll' href='#booking'><i class="fa fa-fw fa-envelope" aria-hidden="true"></i></a>
-				<a class='circleIcon' href='https://www.facebook.com/barrelfullofmonkeys' ><i class="fa fa-fw fa-facebook" aria-hidden="true"></i></a>
+				<a class='circleIcon' href='https://www.facebook.com/barrelfullofmonkeys' ><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div class='jagged-lower'>

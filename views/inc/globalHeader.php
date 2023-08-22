@@ -7,7 +7,7 @@
 <script type='text/javascript'>window.baseURL = <?php echo json_encode(URL); ?>;</script>
 <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans:400,400i,700|Stint+Ultra+Condensed|Alegreya+Sans:800" rel="stylesheet">
 <link href="<?php echo URL; ?>public/css/styles.css" rel="stylesheet">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
 <title><?php echo $this->pageTitle; ?></title>
 </head>

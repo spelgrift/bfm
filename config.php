@@ -2,7 +2,7 @@
 
 // Paths (ensure to leave on trailing /)
 
-define('URL', 'http://kate.sampelgrift.com/ts/bfm_v02/');
+define('URL', 'http://192.168.1.17/ts/audrey_www/ts/bfm_v02/');
 
 define('LIBS', 'libs/');
 

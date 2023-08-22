@@ -1,0 +1,20 @@
+#AddHandler application/x-httpd-ea-php56 .php
+# File modified on Mon Jul 24 22:32:57 2017 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_flag display_errors on
+# File modified on Mon Jul 24 22:33:00 2017 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value error_reporting 9999
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymLinks
+Options +SymLinksIfOwnerMatch
+Options -MultiViews
+
+RewriteEngine On
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?url=$1 [NC,QSA,L]

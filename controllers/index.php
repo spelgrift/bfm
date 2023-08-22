@@ -5,7 +5,7 @@ class Index extends Controller {
 	function __construct() {
 		parent::__construct();	
 
-		$this->view->pageTitle = 'Barrel Full of Monkeys Entertainment';	
+		$this->view->pageTitle = 'Slim Chance Circus';	
 	}
 
 	function index(){
@@ -18,6 +18,9 @@ class Index extends Controller {
 	}
 
 	function loadSlides(){
+		// if($_SERVER['HTTP_ORIGIN'] == "http://www.barrelfullofmonkeys.com/"){
+		// 	header('Access-Control-Allow-Origin: http://www.barrelfullofmonkeys.com/');
+		// } 
 		$headerURL = rtrim(URL, '/');
 		header('Access-Control-Allow-Origin: '.$headerURL, false); 
 		$this->view->render('inc/headerSlides', false);
@@ -26,7 +29,11 @@ class Index extends Controller {
 	function submitContact(){
 		$headerURL = rtrim(URL, '/');
 		header('Access-Control-Allow-Origin: '.$headerURL, false); 
+		// if($_SERVER['HTTP_ORIGIN'] == "http://www.barrelfullofmonkeys.com/"){
+		// 	header('Access-Control-Allow-Origin: http://www.barrelfullofmonkeys.com/');
+		// }
 		$this->model->submitContact();
 	}
+
 }
 ?>

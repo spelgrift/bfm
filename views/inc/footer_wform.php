@@ -5,9 +5,7 @@
 		<div class='row'>
 			<div class='col-xs-10 col-xs-offset-1 visible-xs-block text-center'>
 				<img class='footer-logo' src='<? echo URL."/public/images/BFM_logo_v1.svg"; ?>'>
-				<p><!-- Fill out the below form to request a quote. --> Call or email us for more info or to book us for your event. We serve the East Bay, South Bay, San Francisco, Peninsula, Marin, and Vallejo Areas.</p>
-				<p>We can serve anywhere virtually!</p>
-				<p>No party is too large or too small!</p>
+				<p>Fill out the below form to request a quote. Call or email us for more info or to book us for your event. We serve the East Bay, South Bay, San Francisco, Peninsula, Marin, and Vallejo Areas. No party is too large or too small!</p>
 				<div class='socialIcons'>
 					<!-- <a href='#' ><i class="fa fa-phone" aria-hidden="true"></i></a> -->
 					<a class='circleIcon' href='mailto:revslimchance@gmail.com' ><i class="fa fa-envelope" aria-hidden="true"></i></a>
@@ -15,7 +13,7 @@
 					<a class='circleIcon' href='https://www.facebook.com/SlimChanceCircus' ><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
 				</div>
 			</div>
-<!-- 			<div class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0'>
+			<div class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0'>
 				<h2>REQUEST A QUOTE</h2>
 				<form id='contactForm'>
 					<div class='form-group'>
@@ -54,12 +52,10 @@
 					<p id='contactMsg'></p>
 					<img id='contactLoader' src='<? // echo URL."/public/images/loader.svg"; ?>'>
 				</form>
-			</div> -->
-			<div class='col-sm-6 col-sm-offset-3 hidden-xs text-center contact-blurb'>
+			</div>
+			<div class='col-sm-6 hidden-xs text-center contact-blurb'>
 				<img class='footer-logo' src='<? echo URL."/public/images/BFM_logo_v1.svg"; ?>'>
-				<p><!-- Fill out the below form to request a quote. --> Call or email us for more info or to book us for your event. We serve the East Bay, South Bay, San Francisco, Peninsula, Marin, and Vallejo Areas.</p>
-				<p>We can serve anywhere virtually!</p>
-				<p>No party is too large or too small!</p>
+				<p>Fill out the form to the left to request a quote. Call or email us for more info or to book us for your event. We serve the East Bay, South Bay, San Francisco, Peninsula, Marin, and Vallejo Areas. No party is too large or too small!</p>
 				<div class='socialIcons'>
 					<!-- <a href='#' ><i class="fa fa-phone" aria-hidden="true"></i></a> -->
 					<a class='circleIcon' href='mailto:revslimchance@gmail.com' ><i class="fa fa-envelope" aria-hidden="true"></i></a>

@@ -5,6 +5,8 @@ require 'views/inc/navDrawer.php';
 require 'views/inc/header.php';
 require 'views/sections/brandHeader.php';
 require 'views/sections/vshow.php';
+require 'views/sections/programsBanner.php';
+require 'views/sections/programs.php';
 require 'views/sections/walkaround.php';
 require 'views/sections/childrens.php';
 require 'views/sections/photos.php';

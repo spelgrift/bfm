@@ -4,7 +4,7 @@
 	</nav>
 	<div id="header-brand">
 		<div class='brand-logo' >
-			<img src='<? echo URL."/public/images/SCC_logo_v02.svg"; ?>'>
+			<img src='<? echo URL."/public/images/SCC_logo_v04.svg"; ?>'>
 		</div>
 	</div>
 	<div class='slides'>

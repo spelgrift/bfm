@@ -2,9 +2,11 @@
 
 require 'config.php';
 
-function __autoload($class){
+function autoloader($class){
 	require LIBS . $class. ".php";
 }
+
+spl_autoload_register('autoloader');
 
 $bootstrap =  new Bootstrap();
 $bootstrap->init();
